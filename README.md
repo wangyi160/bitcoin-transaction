@@ -6,22 +6,22 @@ Designed to run on both NodeJS and in the browser.
 
 ## Installation
 
-	npm install --save bitcoin-transaction
+	npm install --save bitcoin-transaction-wangyi
 
 or for the browser
 
 	npm install -g browserify uglify-js
-	npm install bitcoin-transaction
-	browserify -r bitcoin-transaction -s bitcoinTransaction | uglifyjs > bitcoin-transaction.min.js
+	npm install bitcoin-transaction-wangyi
+	browserify -r bitcoin-transaction-wangyi -s bitcoinTransaction | uglifyjs > bitcoin-transaction-wangyi.min.js
 
 ## Usage
 
-	var bitcoinTransaction = require('bitcoin-transaction');
+	var bitcoinTransaction = require('bitcoin-transaction-wangyi');
 
 	//Send all my money from wallet1 to wallet2 on the bitcoin testnet
 	var from = "mm3gdVh8n6YtcNyaTKYkveB6yTME7aDWNJ";
 	var to = "mgPUfqJk4X6gE4P5Do5RfpkTFsYmsSjCya";
-	var privKeyWIF = "cNZi8iySqBToXMpcsQaHKD5uv7HExBQJBSi4dTg3ZPaEzeNAzvbj";	//Private key in WIF form (Can generate this from bitcoinlib-js)
+	var privKeyWIF = "cNZi8iySqBToXMpcsQaHKD5uv7HExBQJBSi4dTg3ZPaEzeNAzvbj";	//Private key in WIF form (Can generate this from bitgo-utxo-lib)
 
 	bitcoinTransaction.getBalance(from, { network: "testnet" }).then((balanceInBTC) => {
 		return bitcoinTransaction.sendTransaction({

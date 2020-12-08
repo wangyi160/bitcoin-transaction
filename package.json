@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Blank101/bitcoin-transaction.git"
+    "url": "git+https://github.com/wangyi160/bitcoin-transaction.git"
   },
   "keywords": [
     "bitcoin",
@@ -18,11 +18,11 @@
   "author": "Sam MacPherson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Blank101/bitcoin-transaction/issues"
+    "url": "https://github.com/wangyi160/bitcoin-transaction/issues"
   },
-  "homepage": "https://github.com/Blank101/bitcoin-transaction#readme",
+  "homepage": "https://github.com/wangyi160/bitcoin-transaction#readme",
   "dependencies": {
-    "bitcoinjs-lib": "^3.3.0",
+    "bitgo-utxo-lib": "^1.8.0",
     "superagent": "^3.8.0"
   },
   "devDependencies": {}
